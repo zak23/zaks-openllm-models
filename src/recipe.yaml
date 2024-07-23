@@ -1,7 +1,7 @@
-"capybarahermes-2_5:7b-fp16":
+"mistral:capybara-7b-fp16":
   project: vllm-chat
   service_config:
-    name: capybarahermes2_5
+    name: mistral
     traffic:
       timeout: 300
     resources:
@@ -9,7 +9,7 @@
       gpu_type: nvidia-rtx-3090
   engine_config:
     model: argilla/CapybaraHermes-2.5-Mistral-7B
-    max_model_len: 1024
+    max_model_len: 4096
     enforce_eager: true
     dtype: half
   chat_template: mistral-instruct
