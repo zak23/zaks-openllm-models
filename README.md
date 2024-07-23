@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">The default model repository of <a href="https://github.com/bentoml/openllm">openllm</a></h1>
+    <h1 align="center">Zaks repository of <a href="https://github.com/bentoml/openllm">openllm</a></h1>
 </div>
 
 This repo (on `main` branch) is already included by openllm by default.
