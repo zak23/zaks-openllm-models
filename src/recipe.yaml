@@ -1,4 +1,4 @@
-"mistral:capybara-7b-fp16":
+"mistral:7b-capybara-fp16":
   project: vllm-chat
   service_config:
     name: mistral
