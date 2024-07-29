@@ -9,7 +9,7 @@
       gpu_type: nvidia-rtx-3090
   engine_config:
     model: argilla/CapybaraHermes-2.5-Mistral-7B
-    max_model_len: 20000
+    max_model_len: 4096
     enforce_eager: true
     dtype: half
   extra_labels:
