@@ -1,10 +1,9 @@
 
 CONSTANT_YAML = '''
-chat_template: mistral-instruct
 engine_config:
   dtype: half
   enforce_eager: true
-  max_model_len: 1024
+  max_model_len: 4096
   model: argilla/CapybaraHermes-2.5-Mistral-7B
 extra_labels:
   model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
