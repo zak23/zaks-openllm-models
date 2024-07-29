@@ -12,7 +12,6 @@
     max_model_len: 1024
     enforce_eager: true
     dtype: half
-  chat_template: mistral-instruct
   extra_labels:
     openllm_alias: 7b
     model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
