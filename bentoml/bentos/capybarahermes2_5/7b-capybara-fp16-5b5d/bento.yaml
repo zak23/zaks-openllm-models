@@ -1,8 +1,8 @@
 service: service:VLLM
 name: capybarahermes2_5
-version: 7b-capybara-fp16-4127
+version: 7b-capybara-fp16-5b5d
 bentoml_version: 1.3.0
-creation_time: '2024-07-29T06:58:15.660326+00:00'
+creation_time: '2024-07-30T04:18:35.507366+00:00'
 labels:
   model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
   openllm_alias: 7b
@@ -62,8 +62,8 @@ schema:
           title: Model
           type: string
         max_tokens:
-          default: 4096
-          maximum: 4096
+          default: 20480
+          maximum: 20480
           minimum: 128
           title: Max Tokens
           type: integer
@@ -95,8 +95,8 @@ schema:
           title: Model
           type: string
         max_tokens:
-          default: 4096
-          maximum: 4096
+          default: 20480
+          maximum: 20480
           minimum: 128
           title: Max Tokens
           type: integer
