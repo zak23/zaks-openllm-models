@@ -15,9 +15,32 @@
   extra_labels:
     openllm_alias: 7b
     model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
-max_tokens:
-          default: 20480
-          maximum: 20480
-          minimum: 128
-          title: Max Tokens
-          type: integer
+  max_tokens:
+    default: 20480
+    maximum: 20480
+    minimum: 128
+    title: Max Tokens
+    type: integer
+"mistral:12b-dolphin-fp16":
+  project: vllm-chat
+  service_config:
+    name: dolphin2_9_3
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+      gpu_type: nvidia-rtx-3090
+  engine_config:
+    model: cognitivecomputations/dolphin-2.9.3-mistral-nemo-12b
+    max_model_len: 20480
+    enforce_eager: true
+    dtype: half
+  extra_labels:
+    openllm_alias: 12b
+    model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
+  max_tokens:
+  default: 20480
+  maximum: 20480
+  minimum: 128
+  title: Max Tokens
+  type: integer
