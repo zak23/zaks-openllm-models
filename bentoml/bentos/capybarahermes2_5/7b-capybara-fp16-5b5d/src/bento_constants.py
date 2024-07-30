@@ -3,7 +3,7 @@ CONSTANT_YAML = '''
 engine_config:
   dtype: half
   enforce_eager: true
-  max_model_len: 4096
+  max_model_len: 20480
   model: argilla/CapybaraHermes-2.5-Mistral-7B
 extra_labels:
   model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1

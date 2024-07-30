@@ -1,4 +1,4 @@
-# capybarahermes2_5:7b-capybara-fp16-4127
+# capybarahermes2_5:7b-capybara-fp16-5b5d
 
 [![pypi_status](https://img.shields.io/badge/BentoML-1.3.0-informational)](https://pypi.org/project/BentoML)
 [![documentation_status](https://readthedocs.org/projects/bentoml/badge/?version=latest)](https://docs.bentoml.com/)

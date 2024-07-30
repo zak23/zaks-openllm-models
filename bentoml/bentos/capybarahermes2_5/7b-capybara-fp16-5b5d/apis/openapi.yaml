@@ -865,8 +865,8 @@ components:
     chat__Input:
       properties:
         max_tokens:
-          default: 4096
-          maximum: 4096
+          default: 20480
+          maximum: 20480
           minimum: 128
           title: Max Tokens
           type: integer
@@ -895,8 +895,8 @@ components:
     generate__Input:
       properties:
         max_tokens:
-          default: 4096
-          maximum: 4096
+          default: 20480
+          maximum: 20480
           minimum: 128
           title: Max Tokens
           type: integer
@@ -947,8 +947,8 @@ paths:
             schema:
               properties:
                 max_tokens:
-                  default: 4096
-                  maximum: 4096
+                  default: 20480
+                  maximum: 20480
                   minimum: 128
                   title: Max Tokens
                   type: integer
@@ -1011,8 +1011,8 @@ paths:
             schema:
               properties:
                 max_tokens:
-                  default: 4096
-                  maximum: 4096
+                  default: 20480
+                  maximum: 20480
                   minimum: 128
                   title: Max Tokens
                   type: integer
