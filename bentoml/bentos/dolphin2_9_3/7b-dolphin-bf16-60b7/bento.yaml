@@ -19,11 +19,11 @@ services:
   config:
     name: dolphin2_9_3
     resources:
-      gpu: 2
+      gpu: 1
       gpu_type: nvidia-rtx-3090
     traffic:
       timeout: 300
-    workers: 1
+    workers: 2
 envs:
 - name: HF_TOKEN
 schema:
