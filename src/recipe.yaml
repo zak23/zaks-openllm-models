@@ -2,7 +2,7 @@
   project: vllm-chat
   service_config:
     name: capybarahermes2_5
-    workers: 2
+    workers: 1
     traffic:
       timeout: 300
     resources:
