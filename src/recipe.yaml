@@ -2,16 +2,18 @@
   project: vllm-chat
   service_config:
     name: capybarahermes2_5
+    workers: 2
     traffic:
       timeout: 300
     resources:
-      gpu: 1
+      gpu: 2
       gpu_type: nvidia-rtx-3090
   engine_config:
     model: argilla/CapybaraHermes-2.5-Mistral-7B
     max_model_len: 28704
     enforce_eager: true
     dtype: half
+    tensor_parallel_size: 2
   extra_labels:
     openllm_alias: 7b
     model_name: argilla/CapybaraHermes-2.5-Mistral-7Bv0.1
@@ -68,35 +70,4 @@
   minimum: 128
   title: Max Tokens
   type: integer
-"qwen2:7b-instruct-awq-4bit":
-  project: vllm-chat
-  service_config:
-    name: qwen2
-    traffic:
-      timeout: 300
-    resources:
-      gpu: 1
-      gpu_type: nvidia-rtx-3060
-  engine_config:
-    model: Qwen/Qwen2-7B-Instruct-AWQ
-    max_model_len: 2048
-    quantization: awq
-  extra_labels:
-    openllm_alias: 7b-4bit,7b-instruct-4bit
-    model_name: Qwen/Qwen2-7B-Instruct-AWQ
-"qwen2:7b-instruct-fp16":
-  project: vllm-chat
-  service_config:
-    name: qwen2
-    traffic:
-      timeout: 300
-    resources:
-      gpu: 1
-      gpu_type: nvidia-tesla-l4
-  engine_config:
-    model: Qwen/Qwen2-7B-Instruct
-    max_model_len: 2048
-    dtype: half
-  extra_labels:
-    openllm_alias: 7b,7b-instruct
-    model_name: Qwen/Qwen2-7B-Instruct
+
