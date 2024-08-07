@@ -27,16 +27,18 @@
   project: vllm-chat
   service_config:
     name: dolphin2_9_3
+    workers: 1
     traffic:
       timeout: 300
     resources:
-      gpu: 1
+      gpu: 2
       gpu_type: nvidia-rtx-3090
   engine_config:
     model: cognitivecomputations/dolphin-2.9.3-mistral-nemo-12b
     max_model_len: 20480
     enforce_eager: true
     dtype: half
+    tensor_parallel_size: 2
   extra_labels:
     openllm_alias: 12b
     model_name: cognitivecomputations/dolphin-2.9.3-mistral-nemo-12b
