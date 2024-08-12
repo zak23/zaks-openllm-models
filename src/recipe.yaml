@@ -6,7 +6,7 @@
     traffic:
       timeout: 300
     resources:
-      gpu: 2
+      gpu: 1
       gpu_type: nvidia-rtx-3090
   engine_config:
     model: argilla/CapybaraHermes-2.5-Mistral-7B
