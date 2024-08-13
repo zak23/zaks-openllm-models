@@ -27,7 +27,7 @@
   project: vllm-chat
   service_config:
     name: dolphin2_9_3
-    workers: 1
+    workers: 2
     traffic:
       timeout: 300
     resources:
