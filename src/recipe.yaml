@@ -63,7 +63,7 @@
     max_model_len: 28704
     enforce_eager: true
     dtype: half
-    tensor_parallel_size: 2
+    tensor_parallel_size: 1
   extra_labels:
     openllm_alias: 7b
     model_name: cognitivecomputations/dolphin-2.9.3-mistral-7B-32k
