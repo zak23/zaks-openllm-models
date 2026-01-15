@@ -73,5 +73,33 @@
   minimum: 128
   title: Max Tokens
   type: integer
-
-
+"mistral:24b-dolphin-exl2-6bpw":
+  project: vllm-chat
+  service_config:
+    name: mistral
+    workers: 1
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+      gpu_type: nvidia-rtx-3090
+  engine_config:
+    model: dphn/Dolphin-Mistral-24B-Venice-Edition-exl2-6bpw
+    max_model_len: 4096
+    dtype: half
+    trust_remote_code: true
+"mistral:8b-omega-fp16":
+  project: vllm-chat
+  service_config:
+    name: mistral
+    workers: 1
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+      gpu_type: nvidia-rtx-3090
+  engine_config:
+    model: ReadyArt/The-Omega-Directive-M-8B-v1.0
+    max_model_len: 4096
+    dtype: half
+    trust_remote_code: true
