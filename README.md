@@ -4,6 +4,11 @@
 
 This repo (on `main` branch) is already included by openllm by default.
 
+## Operations
+
+- [Dolphin3 local worker](docs/dolphin3-local-worker.md) — build, register,
+  serve, verify, and roll back the 8 GB CUDA worker.
+
 If you want more up-to-date untested models, please add our nightly branch.
 
 ```bash
