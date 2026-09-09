@@ -103,4 +103,3 @@ openllm repo add nightly https://github.com/bentoml/openllm@nightly
 | mixtral | 8x7b-instruct-v0.1-fp16-71c6 | [HF Link](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) |
 
 ---
-

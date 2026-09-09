@@ -103,3 +103,28 @@
     max_model_len: 4096
     dtype: half
     trust_remote_code: true
+
+"dolphin3:8b-q4-k-m":
+  project: llamacpp-chat
+  service_config:
+    name: dolphin3_llama31_8b
+    workers: 1
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+  engine_config:
+    model: bartowski/Dolphin3.0-Llama3.1-8B-GGUF
+    filename: Dolphin3.0-Llama3.1-8B-Q4_K_M.gguf
+    n_gpu_layers: -1
+    n_ctx: 8192
+    max_model_len: 8192
+  extra_labels:
+    openllm_alias: 8b
+    model_name: bartowski/Dolphin3.0-Llama3.1-8B-GGUF
+  max_tokens:
+    default: 2048
+    maximum: 4096
+    minimum: 128
+    title: Max Tokens
+    type: integer
